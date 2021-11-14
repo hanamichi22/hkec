@@ -18,7 +18,7 @@
                     </h1>
                     <h1 class="text-color-light font-weight-extra-bold text-12 line-height-1 mb-2 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}">
 Selamat Datang di HK Endurance Challenge</h1>
-                    <p class="text-4 text-color-light font-weight-light opacity-7 mb-0" data-plugin-animated-letters data-plugin-options="{'startDelay': 2000, 'minWindowWidth': 0}">Endurance Sport to our People</p>
+                    <p class="text-10 text-color-light font-weight-light font-weight-bold opacity-7 mb-0" data-plugin-animated-letters data-plugin-options="{'startDelay': 2000, 'minWindowWidth': 0}">Endurance Sport to our People</p>
                 </div>
             </div>
         </div>
