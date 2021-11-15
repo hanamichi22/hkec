@@ -53,12 +53,8 @@
         </head>
         <body data-plugin-page-transition>
             <div class="body">
-                @if(Request::is('login'))
-                @include('front.layouts.login_nav')    
-                @else
-                @include('front.layouts.top_nav')    
-                @endif 
-                
+                @include('front.layouts.top_nav')
+    
                 @yield('main_content')
                     
                 @include('front.layouts.footer')
