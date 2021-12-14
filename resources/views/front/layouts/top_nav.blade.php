@@ -5,7 +5,7 @@
                 <div class="header-column">
                     <div class="header-row">
                         <div class="header-logo">
-                            <a href="/">
+                            <a href="/ ">
                                 <img alt="Porto" width="150" height="100" data-sticky-width="70" data-sticky-height="50" src="{{ asset('template/') }}/img/logohkendurance.png">
                             </a>
                         </div>
