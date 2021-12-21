@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class MdCountry extends Migration
 {
+    protected $connection = 'pgsql';
     /**
      * Run the migrations.
      *
@@ -14,13 +15,13 @@ class MdCountry extends Migration
     public function up()
     {
         Schema::create('md_country', function (Blueprint $table) {
-            $table->integer('id');
+            $table->bigIncrements('id');
             $table->string('iso',2);
             $table->string('name',80);
-            $table->string('nicename',80);
-            $table->string('iso3',3);
-            $table->string('numcode',6);
-            $table->string('phonecode',5);
+            $table->string('nicename',80)->nullable();
+            $table->string('iso3',3)->nullable();
+            $table->string('numcode',6)->nullable();
+            $table->string('phonecode',5)->nullable();
         });
     }
 
