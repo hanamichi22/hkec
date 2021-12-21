@@ -14,7 +14,7 @@ class MdCountryController extends Controller
     
     public function index()
     {
-        $md_country = DB::table('md_country');
+        $md_country = DB::table('md_country')->paginate(10);
         $data = array('md_country' => $md_country);
         return view('backend/b_md_country', $data);
         // return view('backend/b_md_country');

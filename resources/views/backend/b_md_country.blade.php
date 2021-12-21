@@ -60,6 +60,8 @@
                         @endforeach
                     </tbody>
                 </table>
+                <br>
+                {{ $md_country->links("pagination::bootstrap-4"); }}
             </div>
         </section>
     </div>
