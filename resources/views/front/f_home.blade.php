@@ -26,7 +26,7 @@ Selamat Datang di HK Endurance Challenge</h1>
     </div>
 </section>
 
-<section class="section section-scroll section-background overlay overlay-show overlay-op-9 border-0 m-0" data-section-scroll-title="SECTION 3" data-section-scroll-header-color="light" style="background-image: url({{ asset('template/') }}/img/bg-corporate-20-2.jpg); background-size: cover; background-position: center;">
+<section id="apaituhkec" class="section section-scroll section-background overlay overlay-show overlay-op-9 border-0 m-0" data-section-scroll-title="SECTION 3" data-section-scroll-header-color="light" style="background-image: url({{ asset('template/') }}/img/bg-corporate-20-2.jpg); background-size: cover; background-position: center;">
     <div class="container h-100">
         <div class="row align-items-center h-100 py-5 py-md-0">
             <div class="col-md-6">
@@ -76,7 +76,7 @@ Selamat Datang di HK Endurance Challenge</h1>
 </section>
 
 
-<section class="section section-scroll section-background overlay overlay-show overlay-op-9 border-0 m-0" data-section-scroll-title="SECTION 3" data-section-scroll-header-color="light" style="background-image: url({{ asset('template/') }}/img/bg-corporate-20-2.jpg); background-size: cover; background-position: center;">
+<section id="mengapahkec" class="section section-scroll section-background overlay overlay-show overlay-op-9 border-0 m-0" data-section-scroll-title="SECTION 3" data-section-scroll-header-color="light" style="background-image: url({{ asset('template/') }}/img/bg-corporate-20-2.jpg); background-size: cover; background-position: center;">
     <div class="container h-100">
         <div class="row align-items-center h-100 py-5 py-md-0">
             <div class="col-md-6">
@@ -118,7 +118,7 @@ Selamat Datang di HK Endurance Challenge</h1>
 
 
 
-<div class="row text-center pt-5 pb-4 mt-5 mb-4">
+<div id="galleryandpublikasi" class="row text-center pt-5 pb-4 mt-5 mb-4">
     <div class="col-md-10 mx-md-auto">
         <h1 class="word-rotator slide font-weight-bold text-8 mb-3 appear-animation" data-appear-animation="fadeInUpShorter">
             <span>Galery & Publikasi</span>
@@ -334,7 +334,7 @@ Selamat Datang di HK Endurance Challenge</h1>
 </div>
 
 
-<div class="container">
+<div id="sponsorandpartner" class="container">
     <div class="row text-center pt-4 mt-5">
         <div class="col">
             <h2 class="word-rotator slide font-weight-bold text-8 mb-2">

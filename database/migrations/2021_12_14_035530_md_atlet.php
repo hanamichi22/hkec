@@ -15,14 +15,14 @@ class MdAtlet extends Migration
     public function up()
     {
         Schema::create('md_atlet', function (Blueprint $table) {
-            $table->integer('id');
+            $table->bigIncrements('id');
             $table->string('name');
             $table->string('id_country',10);
-            $table->string('Group',10);
-            $table->string('continet',10);
-            $table->string('city',20);
-            $table->enum('gender', ['Male','Female','Other']);
-            $table->string('photo');
+            $table->string('Group',10)->nullable();
+            $table->string('continent',10)->nullable();
+            $table->string('city',20)->nullable();
+            $table->enum('gender', ['Male','Female','Other'])->nullable();
+            $table->string('photo')->nullable();
         });
     }
 

@@ -1,7 +1,8 @@
 <header class="header header-nav-menu header-nav-links">
     <div class="logo-container">
         <a href="{{ asset('templateadmin/') }}/../" class="logo">
-            <img src="{{ asset('templateadmin/') }}/img/logo-modern.png" class="logo-image" width="90" height="24" alt="Porto Admin" /><img src="{{ asset('templateadmin/') }}/img/logo-default.png" class="logo-image-mobile" width="90" height="41" alt="Porto Admin" />
+            {{-- <img src="{{ asset('template/img/logohkendurance.png') }}" class="logo-image" width="50" height="124" alt="Porto Admin" /><img src="{{ asset('templateadmin/') }}/img/logo-default.png" class="logo-image-mobile" width="90" height="41" alt="Porto Admin" /> --}}
+            <label for="" style="font-size: 24px; font-weight:bold;">HK ENDURANCE</label>
         </a>
         <button class="btn header-btn-collapse-nav d-lg-none" data-toggle="collapse" data-target=".header-nav">
             <i class="fas fa-bars"></i>
