@@ -23,9 +23,9 @@
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="list list-icons list-icons-lg">
-                            <li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0">234 Street Name, City Name</p></li>
-                            <li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i><p class="m-0"><a href="{{ asset('template/') }}/tel:8001234567">(800) 123-4567</a></p></li>
-                            <li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a href="{{ asset('template/') }}/mailto:mail@example.com">mail@example.com</a></p></li>
+                            <li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0">Jalan MT Haryono Kav. 8 Cawang, Jakarta Timur</p></li>
+                            <li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i><p class="m-0"><a href="{{ asset('template/') }}/tel:021-8193708">021-8193708</a></p></li>
+                            <li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a href="{{ asset('template/') }}/mailto:corcomm@hutamakarya.com">corcomm@hutamakarya.com</a></p></li>
                         </ul>
                     </div>
                     <div class="col-md-6">
@@ -43,7 +43,7 @@
         <div class="container py-2">
             <div class="row py-4">
                 <div class="col d-flex align-items-center justify-content-center">
-                    <p>© Copyright 2021. All Rights Reserved.</p>
+                    <p>© Copyright 2021. PT Hutama Karya (Persero).</p>
                 </div>
             </div>
         </div>

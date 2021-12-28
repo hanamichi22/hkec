@@ -17,4 +17,9 @@ class MdAtletModel extends Model
                 ->paginate(10);
         return $md_atlet;
     }
+    function get_country_all(){
+        $md_country = DB::table('md_country')->orderBy('name', 'asc')->get();
+        return $md_country;
+    }
+    
 }

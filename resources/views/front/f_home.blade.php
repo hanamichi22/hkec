@@ -26,7 +26,7 @@ Selamat Datang di HK Endurance Challenge</h1>
     </div>
 </section>
 
-<section id="apaituhkec" class="section section-scroll section-background overlay overlay-show overlay-op-9 border-0 m-0" data-section-scroll-title="SECTION 3" data-section-scroll-header-color="light" style="background-image: url({{ asset('template/') }}/img/bg-corporate-20-2.jpg); background-size: cover; background-position: center;">
+<section id="apaituhkec" class="section section-scroll section-background overlay overlay-show overlay-op-7 border-0 m-0" data-section-scroll-title="SECTION 3" data-section-scroll-header-color="light" style="background-image: url({{ asset('template/') }}/img/apaituhkec.JPG); background-size: cover; background-position: center;">
     <div class="container h-100">
         <div class="row align-items-center h-100 py-5 py-md-0">
             <div class="col-md-6">
@@ -76,7 +76,7 @@ Selamat Datang di HK Endurance Challenge</h1>
 </section>
 
 
-<section id="mengapahkec" class="section section-scroll section-background overlay overlay-show overlay-op-9 border-0 m-0" data-section-scroll-title="SECTION 3" data-section-scroll-header-color="light" style="background-image: url({{ asset('template/') }}/img/bg-corporate-20-2.jpg); background-size: cover; background-position: center;">
+<section id="mengapahkec" class="section section-scroll section-background overlay overlay-show overlay-op-7 border-0 m-0" data-section-scroll-title="SECTION 3" data-section-scroll-header-color="light" style="background-image: url({{ asset('template/') }}/img/mengapahkec.JPG); background-size: cover; background-position: center;">
     <div class="container h-100">
         <div class="row align-items-center h-100 py-5 py-md-0">
             <div class="col-md-6">
@@ -128,22 +128,24 @@ Selamat Datang di HK Endurance Challenge</h1>
 <div class="container py-2">
 
     <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'masonry', 'filter': '*'}">
-        <li class="nav-item active" data-option-value="*"><a class="nav-link text-1 text-uppercase active" href="#">Show All</a></li>
-        <li class="nav-item" data-option-value=".websites"><a class="nav-link text-1 text-uppercase" href="#">Websites</a></li>
+        <li class="nav-item active" data-option-value="*"><a class="nav-link text-1 text-uppercase active" href="#">Kegiatan HK Endurance</a></li>
+        {{-- <li class="nav-item" data-option-value=".websites"><a class="nav-link text-1 text-uppercase" href="#">Websites</a></li>
         <li class="nav-item" data-option-value=".logos"><a class="nav-link text-1 text-uppercase" href="#">Logos</a></li>
         <li class="nav-item" data-option-value=".brands"><a class="nav-link text-1 text-uppercase" href="#">Brands</a></li>
-        <li class="nav-item" data-option-value=".medias"><a class="nav-link text-1 text-uppercase" href="#">Medias</a></li>
+        <li class="nav-item" data-option-value=".medias"><a class="nav-link text-1 text-uppercase" href="#">Medias</a></li> --}}
     </ul>
 
-    <div class="sort-destination-loader sort-destination-loader-showing mt-4 pt-2">
+    <div class="">
         <div class="row portfolio-list sort-destination" data-sort-id="portfolio">
 
+            {{-- @for ($i = 0; $i <= 10; $i++) --}}
+                
             <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
                     <a href="portfolio-single-wide-slider.html">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
-                                <img src="{{ asset('template/') }}/img/projects/project-masonry.jpg" class="img-fluid border-radius-0" alt="">
+                                <img src="{{ asset("gallery/1.JPG") }}" class="img-fluid border-radius-0" alt="">
                                 <span class="thumb-info-title">
                                     <span class="thumb-info-inner">Presentation</span>
                                     <span class="thumb-info-type">Brand</span>
@@ -156,91 +158,14 @@ Selamat Datang di HK Endurance Challenge</h1>
                     </a>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 isotope-item medias">
-                <div class="portfolio-item">
-                    <a href="portfolio-single-wide-slider.html">
-                        <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
-                            <span class="thumb-info-wrapper border-radius-0">
-                                <span class="owl-carousel owl-theme dots-inside m-0" data-plugin-options="{'items': 1, 'margin': 20, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 3000}"><span><img src="{{ asset('template/') }}/img/projects/project-masonry-1.jpg" class="img-fluid border-radius-0" alt=""></span><span><img src="{{ asset('template/') }}/img/projects/project-masonry-1-2.jpg" class="img-fluid border-radius-0" alt=""></span></span>
-                                <span class="thumb-info-title">
-                                    <span class="thumb-info-inner">Porto Watch</span>
-                                    <span class="thumb-info-type">Media</span>
-                                </span>
-                                <span class="thumb-info-action">
-                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 isotope-item logos">
-                <div class="portfolio-item">
-                    <a href="portfolio-single-wide-slider.html">
-                        <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
-                            <span class="thumb-info-wrapper border-radius-0">
-                                <img src="{{ asset('template/') }}/img/projects/project-masonry-2.jpg" class="img-fluid border-radius-0" alt="">
-                                <span class="thumb-info-title">
-                                    <span class="thumb-info-inner">Identity</span>
-                                    <span class="thumb-info-type">Logo</span>
-                                </span>
-                                <span class="thumb-info-action">
-                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 isotope-item websites">
-                <div class="portfolio-item">
-                    <a href="portfolio-single-wide-slider.html">
-                        <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
-                            <span class="thumb-info-wrapper border-radius-0">
-                                <img src="{{ asset('template/') }}/img/projects/project-masonry-29.jpg" class="img-fluid border-radius-0" alt="">
-                                <span class="thumb-info-title">
-                                    <span class="thumb-info-inner">Porto Screens</span>
-                                    <span class="thumb-info-type">Website</span>
-                                </span>
-                                <span class="thumb-info-action">
-                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 isotope-item logos">
-                <div class="portfolio-item">
-                    <a href="portfolio-single-wide-slider.html">
-                        <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
-                            <span class="thumb-info-wrapper border-radius-0">
-                                <img src="{{ asset('template/') }}/img/projects/project-masonry-5.jpg" class="img-fluid border-radius-0" alt="">
-                                <span class="thumb-info-title">
-                                    <span class="thumb-info-inner">Three Bottles</span>
-                                    <span class="thumb-info-type">Logo</span>
-                                </span>
-                                <span class="thumb-info-action">
-                                    <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-
             <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
                     <a href="portfolio-single-wide-slider.html">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
-                                <img src="{{ asset('template/') }}/img/projects/project-masonry-6.jpg" class="img-fluid border-radius-0" alt="">
+                                <img src="{{ asset("gallery/2.JPG") }}" class="img-fluid border-radius-0" alt="">
                                 <span class="thumb-info-title">
-                                    <span class="thumb-info-inner">Company T-Shirt</span>
+                                    <span class="thumb-info-inner">Presentation</span>
                                     <span class="thumb-info-type">Brand</span>
                                 </span>
                                 <span class="thumb-info-action">
@@ -251,16 +176,15 @@ Selamat Datang di HK Endurance Challenge</h1>
                     </a>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 isotope-item websites">
+            <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
                     <a href="portfolio-single-wide-slider.html">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
-                                <img src="{{ asset('template/') }}/img/projects/project-masonry-7.jpg" class="img-fluid border-radius-0" alt="">
+                                <img src="{{ asset("gallery/3.JPG") }}" class="img-fluid border-radius-0" alt="">
                                 <span class="thumb-info-title">
-                                    <span class="thumb-info-inner">Mobile Mockup</span>
-                                    <span class="thumb-info-type">Website</span>
+                                    <span class="thumb-info-inner">Presentation</span>
+                                    <span class="thumb-info-type">Brand</span>
                                 </span>
                                 <span class="thumb-info-action">
                                     <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
@@ -270,16 +194,15 @@ Selamat Datang di HK Endurance Challenge</h1>
                     </a>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 isotope-item medias">
+            <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
                     <a href="portfolio-single-wide-slider.html">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
-                                <img src="{{ asset('template/') }}/img/projects/project-masonry-24.jpg" class="img-fluid border-radius-0" alt="">
+                                <img src="{{ asset("gallery/4.JPG") }}" class="img-fluid border-radius-0" alt="">
                                 <span class="thumb-info-title">
-                                    <span class="thumb-info-inner">Porto Label</span>
-                                    <span class="thumb-info-type">Media</span>
+                                    <span class="thumb-info-inner">Presentation</span>
+                                    <span class="thumb-info-type">Brand</span>
                                 </span>
                                 <span class="thumb-info-action">
                                     <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
@@ -289,16 +212,16 @@ Selamat Datang di HK Endurance Challenge</h1>
                     </a>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 isotope-item logos">
+            
+            <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
                     <a href="portfolio-single-wide-slider.html">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
-                                <img src="{{ asset('template/') }}/img/projects/project-masonry-25.jpg" class="img-fluid border-radius-0" alt="">
+                                <img src="{{ asset("gallery/5.JPG") }}" class="img-fluid border-radius-0" alt="">
                                 <span class="thumb-info-title">
-                                    <span class="thumb-info-inner">Business Folders</span>
-                                    <span class="thumb-info-type">Logo</span>
+                                    <span class="thumb-info-inner">Presentation</span>
+                                    <span class="thumb-info-type">Brand</span>
                                 </span>
                                 <span class="thumb-info-action">
                                     <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
@@ -308,16 +231,16 @@ Selamat Datang di HK Endurance Challenge</h1>
                     </a>
                 </div>
             </div>
-
-            <div class="col-md-6 col-lg-4 isotope-item websites">
+            
+            <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
                     <a href="portfolio-single-wide-slider.html">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
-                                <img src="{{ asset('template/') }}/img/projects/project-masonry-26.jpg" class="img-fluid border-radius-0" alt="">
+                                <img src="{{ asset("gallery/6.JPG") }}" class="img-fluid border-radius-0" alt="">
                                 <span class="thumb-info-title">
-                                    <span class="thumb-info-inner">Tablet Screen</span>
-                                    <span class="thumb-info-type">Website</span>
+                                    <span class="thumb-info-inner">Presentation</span>
+                                    <span class="thumb-info-type">Brand</span>
                                 </span>
                                 <span class="thumb-info-action">
                                     <span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
@@ -327,6 +250,9 @@ Selamat Datang di HK Endurance Challenge</h1>
                     </a>
                 </div>
             </div>
+            
+            
+            {{-- @endfor --}}
 
         </div>
     </div>
@@ -340,38 +266,37 @@ Selamat Datang di HK Endurance Challenge</h1>
             <h2 class="word-rotator slide font-weight-bold text-8 mb-2">
                 <span>Sponsor & Partners</span>
             </h2>
-            <h4 class="text-primary lead tall text-4">40,000 CUSTOMERS IN 100 COUNTRIES USE PORTO TEMPLATE. MEET OUR CUSTOMERS.</h4>
+            {{-- <h4 class="text-primary lead tall text-4">40,000 CUSTOMERS IN 100 COUNTRIES USE PORTO TEMPLATE. MEET OUR CUSTOMERS.</h4> --}}
         </div>
     </div>
 
     <div class="row text-center mt-5 pb-5 mb-5">
-        <div class="owl-carousel owl-theme carousel-center-active-item mb-0" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 5}, '992': {'items': 7}, '1200': {'items': 7}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}">
+        <div class="" >
             <div>
-                <img class="img-fluid" src="{{ asset('template/') }}/img/logos/logo-1.png" alt="">
+                <img class="img-fluid" src="{{ asset('sponsor/1.png') }}" alt="">
+                <img class="img-fluid" src="{{ asset('sponsor/2.png') }}" alt="">
             </div>
-            <div>
-                <img class="img-fluid" src="{{ asset('template/') }}/img/logos/logo-2.png" alt="">
-            </div>
-            <div>
-                <img class="img-fluid" src="{{ asset('template/') }}/img/logos/logo-3.png" alt="">
-            </div>
-            <div>
-                <img class="img-fluid" src="{{ asset('template/') }}/img/logos/logo-4.png" alt="">
-            </div>
-            <div>
-                <img class="img-fluid" src="{{ asset('template/') }}/img/logos/logo-5.png" alt="">
-            </div>
-            <div>
-                <img class="img-fluid" src="{{ asset('template/') }}/img/logos/logo-6.png" alt="">
-            </div>
-            <div>
-                <img class="img-fluid" src="{{ asset('template/') }}/img/logos/logo-4.png" alt="">
-            </div>
-            <div>
-                <img class="img-fluid" src="{{ asset('template/') }}/img/logos/logo-2.png" alt="">
-            </div>
+            {{-- <div>
+            </div> --}}
         </div>
     </div>
+</div>
+
+<div id="3box" class="container">
+    <div class="row text-center pt-4 mt-5">
+        <div class="col">
+            <h2 class="word-rotator slide font-weight-bold text-8 mb-2">
+                <span>3 Box</span>
+            </h2>
+            {{-- <h4 class="text-primary lead tall text-4">40,000 CUSTOMERS IN 100 COUNTRIES USE PORTO TEMPLATE. MEET OUR CUSTOMERS.</h4> --}}
+        </div>
+    </div>
+
+    <div class="container py-2">
+        <iframe src="https://www.racetecresults.com/Results.aspx?CId=16412&RId=2218&EId=1" width="100%" height="1200"></iframe>
+    </div>
+    <br>
+    <br>
 </div>
 
 </div>

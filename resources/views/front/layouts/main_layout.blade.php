@@ -7,14 +7,14 @@
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">	
     
-            <title>Porto - Responsive HTML5 Template</title>	
+            <title>HK Endurance Challenge 123K</title>	
     
-            <meta name="keywords" content="HTML5 Template" />
-            <meta name="description" content="Porto - Responsive HTML5 Template">
-            <meta name="author" content="okler.net">
+            <meta name="keywords" content="HK Endurance Challenge 123K" />
+            <meta name="description" content="HK Endurance Challenge 123K">
+            <meta name="author" content="Divisi Sistem IT & Riset Teknologi">
     
             <!-- Favicon -->
-            <link rel="shortcut icon" href="{{ asset('template/') }}/img/favicon.ico" type="image/x-icon" />
+            <link rel="shortcut icon" href="{{ asset('template/') }}/img/logohkendurance.png" type="image/x-icon" />
             <link rel="apple-touch-icon" href="{{ asset('template/') }}/img/apple-touch-icon.png">
     
             <!-- Mobile Metas -->
@@ -54,9 +54,11 @@
         <body data-plugin-page-transition>
             <div class="body">
                 @if(Request::is('login'))
-                @include('front.layouts.login_nav')    
-                @else
+                @include('front.layouts.login_nav')
+                @elseif(Request::is('/'))  
                 @include('front.layouts.top_nav')    
+                @else
+                @include('front.layouts.login_nav')   
                 @endif 
                 
                 @yield('main_content')

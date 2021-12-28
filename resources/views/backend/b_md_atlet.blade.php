@@ -1,4 +1,7 @@
 @extends('backend.layouts.main_layout')
+@section('title_name', 'Master Data Atlet')
+@section('application_title_name', 'HK Endurance 123')
+@section('author_name', 'Divisi Sistem, IT & RisetTek')
 @section('page-header')
 <header class="page-header">
     <h2>Master Data Atlet</h2>
@@ -64,6 +67,9 @@
                 <h2 class="card-title"><i class="fa fa-user"></i> Master Data Atlet</h2>
             </header>
             <div class="card-body">
+                <a href="mdatlet/add" class="pull-right btn btn-sm btn-success"><span class="fa fa-plus"></span> Tambah</a>
+                <br>
+                <br>
                 <table class="table table-responsive-lg table-bordered table-striped table-sm mb-0">
                     <thead>
                         <tr>

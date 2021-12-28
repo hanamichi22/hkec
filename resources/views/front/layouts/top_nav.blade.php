@@ -50,7 +50,7 @@
                                                 Protokol
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Video</a></li>
+                                                <li><a class="dropdown-item" href="/protokol/video">Video</a></li>
                                                 <li><a class="dropdown-item" href="#">Deskripsi</a></li>
                                                 <li><a class="dropdown-item" href="#">Foto Kegiatan Menjalankan Protkol</a></li>
                                             </ul>
@@ -71,7 +71,7 @@
                                 <i class="fas fa-bars"></i>
                             </button>
                         </div>
-                        <div class="header-nav-features header-nav-features-light header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+                        {{-- <div class="header-nav-features header-nav-features-light header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
                             <div class="header-nav-feature header-nav-features-search d-inline-flex">
                                 <a href="{{ asset('template/') }}/#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch"><i class="fas fa-search header-nav-top-icon"></i></a>
                                 <div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed" id="headerTopSearchDropdown">
@@ -85,7 +85,7 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

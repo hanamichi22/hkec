@@ -6,10 +6,10 @@
 		<!-- Basic -->
 		<meta charset="UTF-8">
 
-		<title>Default Layout | Porto Admin - Responsive HTML5 Template</title>
-		<meta name="keywords" content="HTML5 Admin Template" />
-		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
-		<meta name="author" content="okler.net">
+		<title>@yield('title_name') | @yield('application_title_name')</title>
+		<meta name="keywords" content="@yield('title_name')" />
+		<meta name="description" content="@yield('application_title_name')">
+		<meta name="author" content="@yield('author_name')">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -25,10 +25,14 @@
 		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/boxicons/css/boxicons.min.css" />
 		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
 
 		<!-- Specific Page Vendor CSS -->
 		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/jquery-ui/jquery-ui.css" />
 		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/jquery-ui/jquery-ui.theme.css" />
+		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/select2/css/select2.css" />
+		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/select2-bootstrap-theme/select2-bootstrap.min.css" />
+
 		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/bootstrap-multiselect/css/bootstrap-multiselect.css" />
 		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/morris/morris.css" />
 
@@ -160,6 +164,8 @@
 		<script src="{{ asset('templateadmin/') }}/vendor/jquery-ui/jquery-ui.js"></script>
 		<script src="{{ asset('templateadmin/') }}/vendor/jqueryui-touch-punch/jquery.ui.touch-punch.js"></script>
 		<script src="{{ asset('templateadmin/') }}/vendor/jquery-appear/jquery.appear.js"></script>
+		<script src="{{ asset('templateadmin/') }}/vendor/jqueryui-touch-punch/jquery.ui.touch-punch.js"></script>
+		<script src="{{ asset('templateadmin/') }}/vendor/select2/js/select2.js"></script>
 		<script src="{{ asset('templateadmin/') }}/vendor/bootstrap-multiselect/js/bootstrap-multiselect.js"></script>
 		<script src="{{ asset('templateadmin/') }}/vendor/jquery.easy-pie-chart/jquery.easypiechart.js"></script>
 		<script src="{{ asset('templateadmin/') }}/vendor/flot/jquery.flot.js"></script>
@@ -182,8 +188,7 @@
 		<script src="{{ asset('templateadmin/') }}/vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>
 		<script src="{{ asset('templateadmin/') }}/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
 		<script src="{{ asset('templateadmin/') }}/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
-
-
+		<script src="{{ asset('templateadmin/') }}/vendor/bootstrap-fileupload/bootstrap-fileupload.min.js"></script>
 		<!--(remove-empty-lines-end)-->
 		
 		<!-- Theme Base, Components and Settings -->

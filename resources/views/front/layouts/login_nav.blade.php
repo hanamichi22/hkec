@@ -20,68 +20,11 @@
                                                 Home
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li>
-                                                    <a class="dropdown-item" href="{{ asset('template/') }}/index.html">
-                                                        Landing Page
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="{{ asset('template/') }}/index.html#demos">
-                                                        Demos <span class="tip tip-dark">hot</span>
-                                                    </a>
-                                                </li>
-                                                <li class="dropdown-submenu">
-                                                    <a class="dropdown-item" href="{{ asset('template/') }}/#">Classic</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-classic.html">Classic - Original</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-classic-color.html">Classic - Color</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-classic-light.html">Classic - Light</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-classic-video.html">Classic - Video</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-classic-video-light.html">Classic - Video - Light</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu">
-                                                    <a class="dropdown-item" href="{{ asset('template/') }}/#">Corporate</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-corporate.html">Corporate - Version 1</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-corporate-2.html">Corporate - Version 2</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-corporate-3.html">Corporate - Version 3</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-corporate-4.html">Corporate - Version 4</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-corporate-5.html">Corporate - Version 5</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-corporate-6.html">Corporate - Version 6</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-corporate-7.html">Corporate - Version 7</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-corporate-8.html">Corporate - Version 8</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-corporate-9.html">Corporate - Version 9</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-corporate-10.html"->Corporate - Version 10</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index.html#demos"->More...</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu">
-                                                    <a class="dropdown-item" href="{{ asset('template/') }}/#">Portfolio</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-portfolio.html">Portfolio - Version 1</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-portfolio-2.html">Portfolio - Version 2</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-portfolio-3.html">Portfolio - Version 3</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-portfolio-4.html">Portfolio - Version 4</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-portfolio-5.html">Portfolio - Version 5</a></li>
-                                                    </ul>
-                                                </li>		
-                                                <li class="dropdown-submenu">
-                                                    <a class="dropdown-item" href="{{ asset('template/') }}/#">Blog</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-blog.html">Blog - Version 1</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-blog-2.html">Blog - Version 2</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-blog-3.html">Blog - Version 3</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-blog-4.html">Blog - Version 4</a></li>
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-blog-5.html">Blog - Version 5</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu">
-                                                    <a class="dropdown-item" href="{{ asset('template/') }}/#">One Page</a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="{{ asset('template/') }}/index-one-page.html">One Page Original</a></li>
-                                                    </ul>
-                                                </li>
+                                                <li><a class="dropdown-item" href="/#apaituhkec">Apa itu HKEC 123 </a></li>
+                                                <li><a class="dropdown-item" href="/#mengapahkec">Mengapa HKEC 123</a></li>
+                                                <li><a class="dropdown-item" href="/#galleryandpublikasi">Galery & Publikasi</a></li>
+                                                <li><a class="dropdown-item" href="/#sponsorandpartner">Sponsor & Partner</a></li>
+                                                <li><a class="dropdown-item" href="/#3box">3 Box</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown">
@@ -105,7 +48,7 @@
                                                 Protokol
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Video</a></li>
+                                                <li><a class="dropdown-item" href="/protokol/video">Video</a></li>
                                                 <li><a class="dropdown-item" href="#">Deskripsi</a></li>
                                                 <li><a class="dropdown-item" href="#">Foto Kegiatan Menjalankan Protkol</a></li>
                                             </ul>
