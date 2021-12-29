@@ -30,3 +30,8 @@ Route::get('/mdcountry/add', [App\Http\Controllers\MdCountryController::class, '
 Route::get('/mdatlet', [App\Http\Controllers\MdAtletController::class, 'index']);
 Route::get('/mdatlet/add', [App\Http\Controllers\MdAtletController::class, 'add']);
 Route::post('/mdatlet/add', [App\Http\Controllers\MdAtletController::class, 'add_ac']);
+
+Route::get('/mdatlet/edit/{id}', [App\Http\Controllers\MdAtletController::class, 'edit']);
+Route::POST('/mdatlet/edit/', [App\Http\Controllers\MdAtletController::class, 'edit_ac']);
+
+Route::get('/mdatlet/delete/{id}', [App\Http\Controllers\MdAtletController::class, 'delete_ac']);

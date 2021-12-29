@@ -25,6 +25,7 @@
 		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/boxicons/css/boxicons.min.css" />
 		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/elusive-icons/css/elusive-icons.css" />
 		<link rel="stylesheet" href="{{ asset('templateadmin/') }}/vendor/bootstrap-fileupload/bootstrap-fileupload.min.css" />
 
 		<!-- Specific Page Vendor CSS -->

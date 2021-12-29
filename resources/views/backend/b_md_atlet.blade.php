@@ -58,6 +58,17 @@
         </form>
     </div>
     <div class="col-lg-12">
+        <br>
+        @if (session('pesan'))
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <h5><i class="icon fas fa-check"></i> Sukses!</h5>
+            {{ session('pesan') }}
+        </div>
+        @endif
+        <br>
+    </div>
+    <div class="col-lg-12">
         <section class="card">
             <header class="card-header">
                 <div class="card-actions">
@@ -81,6 +92,7 @@
                             <th>City</th>
                             <th>Gender</th>
                             <th>Photo</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -93,7 +105,22 @@
                             <td>{{ $item->continent }}</td>
                             <td>{{ $item->city }}</td>
                             <td>{{ $item->gender }}</td>
-                            <td>{{ $item->photo }}</td>
+                            <td class="text-center">
+                                @if ($item->photo != "")
+                                    <img src='{{ asset("foto_atlet/$item->photo") }}' width="100" height="100" alt="">
+                                @else
+                                    -
+                                @endif
+                            </td>
+                            <td class="text-center">
+                                <div class="btn-group flex-wrap">
+                                    <a href="/mdatlet/edit/{{ $item->id }}" class="btn btn-sm btn-warning"><i class="el el-pencil"></i></a>
+                                    {{-- <a href="/mdatlet/delete/{{ $item->id }}" class="btn btn-sm btn-danger"><i class="el el-trash"></i></a> --}}
+                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete{{ $item->id }}">
+                                    <span class="el el-trash"></span>
+                                    </button>
+                                </div>
+                            </td>
                         </tr>
                         @endforeach
                     </tbody>
@@ -102,4 +129,30 @@
         </section>
     </div>
 </div>
+
+@foreach ($md_atlet as $item)
+  <div class="modal fade" id="delete{{ $item->id }}">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Delete Confirmation</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Apakah {{ $item->name }} akan dihapus?</p>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <a href="/mdatlet/delete/{{ $item->id }}" class="btn btn-danger">Delete</a>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+  @endforeach
+
 @endsection

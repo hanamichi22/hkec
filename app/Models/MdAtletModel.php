@@ -17,9 +17,22 @@ class MdAtletModel extends Model
                 ->paginate(10);
         return $md_atlet;
     }
+    function get_atlet($id){
+        $md_atlet = DB::table('md_atlet')->where('id',$id)->first();
+        return $md_atlet;
+    }
     function get_country_all(){
         $md_country = DB::table('md_country')->orderBy('name', 'asc')->get();
         return $md_country;
+    }
+    function insert_atlet($data){
+        return DB::table('md_atlet')->insert($data);
+    }
+    function update_atlet($data,$id){
+        $md_atlet = DB::table('md_atlet')->where('id',$id)->update($data);
+    }
+    function deleteData($id){
+        return DB::delete("delete from md_atlet where id='".$id."'");
     }
     
 }

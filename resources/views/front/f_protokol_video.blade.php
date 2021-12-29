@@ -32,7 +32,7 @@
     
     <div class="container py-4">
         <video  autoplay="" muted="" loop="" controls="" width="100%">
-            <source src="{{ asset('protokol/protokol_video.MP4') }}" type="video/mp4">
+            <source src="{{ asset('protokol/protokol_video.mkv') }}" type="video/mp4">
         </video>
     </div>
     <div class="container py-4">
