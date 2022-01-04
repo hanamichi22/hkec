@@ -29,7 +29,7 @@ class MdAtletModel extends Model
         return DB::table('md_atlet')->insert($data);
     }
     function update_atlet($data,$id){
-        $md_atlet = DB::table('md_atlet')->where('id',$id)->update($data);
+        return  DB::table('md_atlet')->where('id',$id)->update($data);
     }
     function deleteData($id){
         return DB::delete("delete from md_atlet where id='".$id."'");

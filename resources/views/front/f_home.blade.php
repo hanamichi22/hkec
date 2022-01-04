@@ -116,7 +116,9 @@ Selamat Datang di HK Endurance Challenge</h1>
     </div>
 </section>
 
-
+<div class="divider divider-solid divider-style-4 taller">
+    <i class="fas fa-chevron-down"></i>
+</div>
 
 <div id="galleryandpublikasi" class="row text-center pt-5 pb-4 mt-5 mb-4">
     <div class="col-md-10 mx-md-auto">
@@ -259,6 +261,9 @@ Selamat Datang di HK Endurance Challenge</h1>
 
 </div>
 
+<div class="divider divider-solid divider-style-4 taller">
+    <i class="fas fa-chevron-down"></i>
+</div>
 
 <div id="sponsorandpartner" class="container">
     <div class="row text-center pt-4 mt-5">
@@ -282,22 +287,94 @@ Selamat Datang di HK Endurance Challenge</h1>
     </div>
 </div>
 
+<div class="divider divider-solid divider-style-4 taller">
+    <i class="fas fa-chevron-down"></i>
+</div>
+
 <div id="3box" class="container">
-    <div class="row text-center pt-4 mt-5">
+   
+    <div class="row">
         <div class="col">
-            <h2 class="word-rotator slide font-weight-bold text-8 mb-2">
-                <span>3 Box</span>
-            </h2>
-            {{-- <h4 class="text-primary lead tall text-4">40,000 CUSTOMERS IN 100 COUNTRIES USE PORTO TEMPLATE. MEET OUR CUSTOMERS.</h4> --}}
+
+            <h2 class="mb-0 text-center font-weight-bold">PRA EVENT & PROMOSI</h2>
+            {{-- <p>The thumbnail details can be displayed in different styles.</p> --}}
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-lg-4">
+
+                    {{-- <h5 class="text-uppercase mt-4">Jakarta Open Water Swim</h5> --}}
+                    <span class="thumb-info thumb-info-hide-wrapper-bg">
+                        <span class="thumb-info-wrapper">
+                            <img src="{{ asset("template/img/blog/square/blog-15.jpg") }}" class="img-fluid" alt="">
+                            <span class="thumb-info-title">
+                                <span class="thumb-info-inner">Jakarta Open Water Swim</span>
+                                <a href="#" class="thumb-info-type text-white">Learn More..</a>
+                            </span>
+                        </span>
+                        {{-- <span class="thumb-info-caption">
+                            <span class="thumb-info-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <span class="thumb-info-social-icons">
+                                <a target="_blank" href="http://www.facebook.com"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+                                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+                                <a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+                            </span>
+                        </span> --}}
+                    </span>
+
+                </div>
+                <div class="col-lg-4">
+
+                    {{-- <h5 class="text-uppercase mt-4">Bali City Swim</h5> --}}
+                    <span class="thumb-info thumb-info-hide-wrapper-bg">
+                        <span class="thumb-info-wrapper">
+                            <img src="{{ asset("template/img/blog/square/blog-15.jpg") }}" class="img-fluid" alt="">
+                            <span class="thumb-info-title">
+                                <span class="thumb-info-inner">Bali City Swim</span>
+                                <a href="#" class="thumb-info-type text-white">Learn More..</a>
+                            </span>
+                        </span>
+                        {{-- <span class="thumb-info-caption">
+                            <span class="thumb-info-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <span class="thumb-info-social-icons">
+                                <a target="_blank" href="http://www.facebook.com"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+                                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+                                <a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+                            </span>
+                        </span> --}}
+                    </span>
+
+                </div>
+                <div class="col-lg-4">
+
+                    {{-- <h5 class="text-uppercase mt-4">With Captions</h5> --}}
+                    <span class="thumb-info thumb-info-hide-wrapper-bg">
+                        <span class="thumb-info-wrapper">
+                            <img src="{{ asset("template/img/blog/square/blog-15.jpg") }}" class="img-fluid" alt="">
+                            <span class="thumb-info-title">
+                                <span class="thumb-info-inner">Virtual Relay 123 Endurance Challenge</span>
+                                <a href="#" class="thumb-info-type text-white">Learn More..</a>
+                            </span>
+                        </span>
+                        {{-- <span class="thumb-info-caption">
+                            <span class="thumb-info-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <span class="thumb-info-social-icons">
+                                <a target="_blank" href="http://www.facebook.com"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+                                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+                                <a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+                            </span>
+                        </span> --}}
+                    </span>
+
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="container py-2">
-        <iframe src="https://www.racetecresults.com/Results.aspx?CId=16412&RId=2218&EId=1" width="100%" height="1200"></iframe>
-    </div>
-    <br>
-    <br>
+    
 </div>
 
-</div>
+<br>
+<br>
+<br>
 @endsection
