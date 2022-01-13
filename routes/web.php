@@ -32,11 +32,14 @@ Route::get('/protokol/video', [App\Http\Controllers\ProtokolController::class, '
 
 Route::get('/mdcountry', [App\Http\Controllers\MdCountryController::class, 'index']);
 Route::get('/mdcountry/add', [App\Http\Controllers\MdCountryController::class, 'add']);
+Route::POST('/mdcountry/add', [App\Http\Controllers\MdCountryController::class, 'add_ac']);
+Route::get('/mdcountry/edit/{id}', [App\Http\Controllers\MdCountryController::class, 'edit']);
+Route::POST('/mdcountry/edit/', [App\Http\Controllers\MdCountryController::class, 'edit_ac']);
+Route::get('/mdcountry/delete/{id}', [App\Http\Controllers\MdCountryController::class, 'delete_ac']);
 
 Route::get('/mdatlet', [App\Http\Controllers\MdAtletController::class, 'index']);
 Route::get('/mdatlet/add', [App\Http\Controllers\MdAtletController::class, 'add']);
 Route::post('/mdatlet/add', [App\Http\Controllers\MdAtletController::class, 'add_ac']);
-
 Route::get('/mdatlet/edit/{id}', [App\Http\Controllers\MdAtletController::class, 'edit']);
 Route::POST('/mdatlet/edit/', [App\Http\Controllers\MdAtletController::class, 'edit_ac']);
 

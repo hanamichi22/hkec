@@ -90,19 +90,22 @@ class MdAtletController extends Controller
             $fileName = md5(date('Y-m-d h:i:s')).'.'.$file->extension();
             $file->move(public_path('foto_atlet'),$fileName);
             $data = array_merge($data, ['photo'=>$fileName]);
-         }
+
+            if(file_exists(public_path("foto_atlet").'/'.request()->photo)){
+                unlink(public_path("foto_atlet").'/'.request()->photo);
+            }
+        }
 
         $this->MdAtlet->update_atlet($data,request()->id);
-        return redirect('/mdatlet')->with('pesan','Data Berhasil di tambahkan');
+        return redirect('/mdatlet')->with('pesan','Data Berhasil di update');
     }
     public function delete_ac($id){
-        // echo "masuk delete";
         $photo = $this->MdAtlet->get_atlet($id)->photo;
         
         if ($photo != "") {
-            if(file_exists(public_path("foto_atlet").'/'.$photo)){
+            if(file_exists(public_path("foto_atlet").'/'.$photo_lama)){
                 # code...
-                unlink(public_path("foto_atlet").'/'.$photo);
+                unlink(public_path("foto_atlet").'/'.$photo_lama);
             }
         }
         $this->MdAtlet->deleteData($id);
