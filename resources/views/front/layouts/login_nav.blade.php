@@ -24,7 +24,7 @@
                                                 <li><a class="dropdown-item" href="/#mengapahkec">Mengapa HKEC 123</a></li>
                                                 <li><a class="dropdown-item" href="/#galleryandpublikasi">Galery & Publikasi</a></li>
                                                 <li><a class="dropdown-item" href="/#sponsorandpartner">Sponsor & Partner</a></li>
-                                                <li><a class="dropdown-item" href="/#3box">3 Box</a></li>
+                                                <li><a class="dropdown-item" href="/#3box">Pra Event & Promosi</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown">
@@ -32,7 +32,7 @@
                                                 Series
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">List Negara Peserta</a></li>
+                                                <li><a class="dropdown-item" href="/series/list_peserta_negara">List Negara Peserta</a></li>
                                                 <li class="dropdown-submenu">
                                                     <a class="dropdown-item" href="#">Triathlon</a>
                                                     <ul class="dropdown-menu">
