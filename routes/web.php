@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FhomeController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SponsorController;
+use App\Http\Controllers\MdSponsorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +17,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('front/f_home');
-});
+// Route::get('/', function () {
+//     return view('front/f_home');
+// });
+
+Route::get('/', [App\Http\Controllers\FhomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
@@ -39,3 +45,15 @@ Route::get('/mdatlet/edit/{id}', [App\Http\Controllers\MdAtletController::class,
 Route::POST('/mdatlet/edit/', [App\Http\Controllers\MdAtletController::class, 'edit_ac']);
 
 Route::get('/mdatlet/delete/{id}', [App\Http\Controllers\MdAtletController::class, 'delete_ac']);
+
+Route::resource('sponsors', SponsorController::class);
+// Route::resource('prosducts', ProductController::class);
+
+// Route::get('/mdsponsor', [App\Http\Controllers\MdSponsorController::class, 'index']);
+// Route::get('/mdsponsor/add', [App\Http\Controllers\MdSponsorController::class, 'add']);
+// Route::post('/mdsponsor/add', [App\Http\Controllers\MdSponsorController::class, 'add_ac']);
+
+// Route::get('/mdsponsor/edit/{id}', [App\Http\Controllers\MdSponsorController::class, 'edit']);
+// Route::POST('/mdsponsor/edit/', [App\Http\Controllers\MdSponsorController::class, 'edit_ac']);
+
+// Route::get('/mdsponsor/delete/{id}', [App\Http\Controllers\MdSponsorController::class, 'delete_ac']);

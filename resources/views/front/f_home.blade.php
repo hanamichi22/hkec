@@ -274,17 +274,22 @@ Selamat Datang di HK Endurance Challenge</h1>
             {{-- <h4 class="text-primary lead tall text-4">40,000 CUSTOMERS IN 100 COUNTRIES USE PORTO TEMPLATE. MEET OUR CUSTOMERS.</h4> --}}
         </div>
     </div>
-
+    
+    
     <div class="row text-center mt-5 pb-5 mb-5">
         <div class="" >
             <div>
-                <img class="img-fluid" src="{{ asset('sponsor/1.png') }}" alt="">
-                <img class="img-fluid" src="{{ asset('sponsor/2.png') }}" alt="">
+                @foreach ($sponsors as $sponsor)
+                    
+                <img src="/sponsor/{{ $sponsor->image }}" alt="" style="height: 7rem;">
+                @endforeach
+                    {{-- <img src="{{ asset('image/' . $post->image) }}" alt=""> --}}
             </div>
-            {{-- <div>
-            </div> --}}
+            <div>
+            </div>
         </div>
     </div>
+   
 </div>
 
 <div class="divider divider-solid divider-style-4 taller">
