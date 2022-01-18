@@ -312,10 +312,10 @@ Selamat Datang di HK Endurance Challenge</h1>
                     {{-- <h5 class="text-uppercase mt-4">Jakarta Open Water Swim</h5> --}}
                     <span class="thumb-info thumb-info-hide-wrapper-bg">
                         <span class="thumb-info-wrapper">
-                            <img src="{{ asset("template/img/blog/square/blog-15.jpg") }}" class="img-fluid" alt="">
+                            <img src="{{ asset("praeventdanpromosi/cycle.JPG") }}" class="img-fluid" alt="">
                             <span class="thumb-info-title">
-                                <span class="thumb-info-inner">Jakarta Open Water Swim</span>
-                                <a href="#" class="thumb-info-type text-white">Learn More..</a>
+                                <span class="thumb-info-inner">Cycling</span>
+                                <a href="/home/praeventdanpromosi/cycle" class="thumb-info-type text-white">Learn More..</a>
                             </span>
                         </span>
                         {{-- <span class="thumb-info-caption">
@@ -334,10 +334,10 @@ Selamat Datang di HK Endurance Challenge</h1>
                     {{-- <h5 class="text-uppercase mt-4">Bali City Swim</h5> --}}
                     <span class="thumb-info thumb-info-hide-wrapper-bg">
                         <span class="thumb-info-wrapper">
-                            <img src="{{ asset("template/img/blog/square/blog-15.jpg") }}" class="img-fluid" alt="">
+                            <img src="{{ asset("praeventdanpromosi/swim.JPG") }}" class="img-fluid" alt="">
                             <span class="thumb-info-title">
-                                <span class="thumb-info-inner">Bali City Swim</span>
-                                <a href="#" class="thumb-info-type text-white">Learn More..</a>
+                                <span class="thumb-info-inner">Swimming</span>
+                                <a href="/home/praeventdanpromosi/swim" class="thumb-info-type text-white">Learn More..</a>
                             </span>
                         </span>
                         {{-- <span class="thumb-info-caption">
@@ -358,8 +358,8 @@ Selamat Datang di HK Endurance Challenge</h1>
                         <span class="thumb-info-wrapper">
                             <img src="{{ asset("template/img/blog/square/blog-15.jpg") }}" class="img-fluid" alt="">
                             <span class="thumb-info-title">
-                                <span class="thumb-info-inner">Virtual Relay 123 Endurance Challenge</span>
-                                <a href="#" class="thumb-info-type text-white">Learn More..</a>
+                                <span class="thumb-info-inner">Running</span>
+                                <a href="/home/praeventdanpromosi/run" class="thumb-info-type text-white">Learn More..</a>
                             </span>
                         </span>
                         {{-- <span class="thumb-info-caption">
