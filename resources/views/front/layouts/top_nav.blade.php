@@ -38,9 +38,9 @@
                                                 <li class="dropdown-submenu">
                                                     <a class="dropdown-item" href="#">Triathlon</a>
                                                     <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">Renang</a></li>
-                                                        <li><a class="dropdown-item" href="#">Sepeda</a></li>
-                                                        <li><a class="dropdown-item" href="#">Lari</a></li>
+                                                        <li><a class="dropdown-item" href="/home/praeventdanpromosi/swim">Renang</a></li>
+                                                        <li><a class="dropdown-item" href="/home/praeventdanpromosi/cycle">Sepeda</a></li>
+                                                        <li><a class="dropdown-item" href="home/praeventdanpromosi/run">Lari</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
