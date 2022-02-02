@@ -44,7 +44,7 @@
                 
                 <div class="col-md-6 col-lg-4 isotope-item brands">
                     <div class="portfolio-item">
-                        <a href="portfolio-single-wide-slider.html">
+                        <a href="#">
                             <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                                 <span class="thumb-info-wrapper border-radius-0">
                                     <img src="{{ asset("praeventdanpromosi/$folder_kategori_text/1.JPG") }}" class="img-fluid border-radius-0" alt="">
@@ -62,7 +62,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 isotope-item brands">
                     <div class="portfolio-item">
-                        <a href="portfolio-single-wide-slider.html">
+                        <a href="#">
                             <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                                 <span class="thumb-info-wrapper border-radius-0">
                                     <img src="{{ asset("praeventdanpromosi/$folder_kategori_text/2.JPG") }}" class="img-fluid border-radius-0" alt="">
@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 isotope-item brands">
                     <div class="portfolio-item">
-                        <a href="portfolio-single-wide-slider.html">
+                        <a href="#">
                             <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                                 <span class="thumb-info-wrapper border-radius-0">
                                     <img src="{{ asset("praeventdanpromosi/$folder_kategori_text/3.JPG") }}" class="img-fluid border-radius-0" alt="">
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 isotope-item brands">
                     <div class="portfolio-item">
-                        <a href="portfolio-single-wide-slider.html">
+                        <a href="#">
                             <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                                 <span class="thumb-info-wrapper border-radius-0">
                                     <img src="{{ asset("praeventdanpromosi/$folder_kategori_text/4.JPG") }}" class="img-fluid border-radius-0" alt="">
@@ -116,7 +116,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 isotope-item brands">
                     <div class="portfolio-item">
-                        <a href="portfolio-single-wide-slider.html">
+                        <a href="#">
                             <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                                 <span class="thumb-info-wrapper border-radius-0">
                                     <img src="{{ asset("praeventdanpromosi/$folder_kategori_text/5.JPG") }}" class="img-fluid border-radius-0" alt="">

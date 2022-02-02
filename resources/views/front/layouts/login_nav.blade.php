@@ -16,7 +16,7 @@
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li class="dropdown">
-                                            <a class="dropdown-item dropdown-toggle active" href="{{ asset('template/') }}/index.html">
+                                            <a class="dropdown-item dropdown-toggle active" href="/">
                                                 Home
                                             </a>
                                             <ul class="dropdown-menu">

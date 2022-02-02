@@ -144,7 +144,7 @@ Selamat Datang di HK Endurance Challenge</h1>
                 
             <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
-                    <a href="portfolio-single-wide-slider.html">
+                    <a href="#">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
                                 <img src="{{ asset("gallery/1.JPG") }}" class="img-fluid border-radius-0" alt="">
@@ -162,7 +162,7 @@ Selamat Datang di HK Endurance Challenge</h1>
             </div>
             <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
-                    <a href="portfolio-single-wide-slider.html">
+                    <a href="#">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
                                 <img src="{{ asset("gallery/2.JPG") }}" class="img-fluid border-radius-0" alt="">
@@ -180,7 +180,7 @@ Selamat Datang di HK Endurance Challenge</h1>
             </div>
             <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
-                    <a href="portfolio-single-wide-slider.html">
+                    <a href="#">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
                                 <img src="{{ asset("gallery/3.JPG") }}" class="img-fluid border-radius-0" alt="">
@@ -198,7 +198,7 @@ Selamat Datang di HK Endurance Challenge</h1>
             </div>
             <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
-                    <a href="portfolio-single-wide-slider.html">
+                    <a href="#">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
                                 <img src="{{ asset("gallery/4.JPG") }}" class="img-fluid border-radius-0" alt="">
@@ -217,7 +217,7 @@ Selamat Datang di HK Endurance Challenge</h1>
             
             <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
-                    <a href="portfolio-single-wide-slider.html">
+                    <a href="#">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
                                 <img src="{{ asset("gallery/5.JPG") }}" class="img-fluid border-radius-0" alt="">
@@ -236,7 +236,7 @@ Selamat Datang di HK Endurance Challenge</h1>
             
             <div class="col-md-6 col-lg-4 isotope-item brands">
                 <div class="portfolio-item">
-                    <a href="portfolio-single-wide-slider.html">
+                    <a href="#">
                         <span class="thumb-info thumb-info-centered-info thumb-info-no-borders border-radius-0">
                             <span class="thumb-info-wrapper border-radius-0">
                                 <img src="{{ asset("gallery/6.JPG") }}" class="img-fluid border-radius-0" alt="">

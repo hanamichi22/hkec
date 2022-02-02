@@ -9,7 +9,7 @@
         </button>
 
         <!-- start: header nav menu -->
-        <div class="header-nav collapse">
+        {{-- <div class="header-nav collapse">
             <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 header-nav-main-square">
                 <nav>
                     <ul class="nav nav-pills" id="mainNav">
@@ -704,7 +704,7 @@
                     </ul>
                 </nav>
             </div>
-        </div>
+        </div> --}}
         <!-- end: header nav menu -->
     </div>
 
@@ -712,16 +712,16 @@
     <div class="header-right">
 
         <a class="btn search-toggle d-none d-md-inline-block d-xl-none" data-toggle-class="active" data-target=".search"><i class="bx bx-search"></i></a>
-        <form action="pages-search-results.html" class="search search-style-1 nav-form d-none d-xl-inline-block">
+        {{-- <form action="pages-search-results.html" class="search search-style-1 nav-form d-none d-xl-inline-block">
             <div class="input-group">
                 <input type="text" class="form-control" name="q" id="q" placeholder="Search...">
                 <span class="input-group-append">
                     <button class="btn btn-default" type="submit"><i class="bx bx-search"></i></button>
                 </span>
             </div>
-        </form>
+        </form> --}}
 
-        <span class="separator"></span>
+        {{-- <span class="separator"></span>
         <a class="dropdown-language nav-link" href="{{ asset('templateadmin/') }}/#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img src="{{ asset('templateadmin/') }}/img/blank.gif" class="flag flag-us" alt="English" /> EN
             <i class="fas fa-chevron-down"></i>
@@ -732,10 +732,10 @@
             <a class="dropdown-item" href="{{ asset('templateadmin/') }}/#"><img src="{{ asset('templateadmin/') }}/img/blank.gif" class="flag flag-fr" alt="English" /> Française</a>
         </div>
     
-        <span class="separator"></span>
+        <span class="separator"></span> --}}
 
         <ul class="notifications">
-            <li>
+            {{-- <li>
                 <a href="{{ asset('templateadmin/') }}/#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
                     <i class="bx bx-task"></i>
                     <span class="badge">3</span>
@@ -781,8 +781,8 @@
                         </ul>
                     </div>
                 </div>
-            </li>
-            <li>
+            </li> --}}
+            {{-- <li>
                 <a href="{{ asset('templateadmin/') }}/#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
                     <i class="bx bx-envelope"></i>
                     <span class="badge">4</span>
@@ -884,7 +884,7 @@
                         </div>
                     </div>
                 </div>
-            </li>
+            </li> --}}
         </ul>
 
         <span class="separator"></span>
@@ -901,9 +901,6 @@
 
             <div class="dropdown-menu">
                 <ul class="list-unstyled">
-                    <li>
-                        <a role="menuitem" tabindex="-1" href="{{ asset('templateadmin/') }}/pages-user-profile.html"><i class="bx bx-user"></i> My Profile</a>
-                    </li>
                     <li>
                         <a role="menuitem" tabindex="-1" href="/logout"><i class="bx bx-log-out"></i> Logout</a>
                     </li>

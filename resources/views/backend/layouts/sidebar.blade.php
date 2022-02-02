@@ -12,7 +12,7 @@
             
                 <ul class="nav nav-main">
                     <li>
-                        <a class="nav-link" href="{{ asset('templateadmin/') }}/layouts-default.html">
+                        <a class="nav-link" href="/home">
                             <i class="bx bx-home-alt" aria-hidden="true"></i>
                             <span>Home</span>
                         </a>                        
