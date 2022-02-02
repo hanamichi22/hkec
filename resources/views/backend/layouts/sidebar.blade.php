@@ -32,7 +32,7 @@
                     </li>
                     <li>
                         <a class="nav-link" href="/sponsors">
-                            <i class="bi bi-pen" aria-hidden="true"></i>
+                            <i class="fa fa-users" aria-hidden="true"></i>
                             <span>Sponsor</span>
                         </a>                        
                     </li>

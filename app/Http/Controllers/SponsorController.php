@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Sponsor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SponsorController extends Controller
 {
@@ -14,10 +15,30 @@ class SponsorController extends Controller
      */
     public function index()
     {
-        $sponsors = Sponsor::latest()->paginate(5);
+        $pagination  = 5;
+        // $sponsors    = Sponsor::when($request->search, function ($query) use ($request) {
+        //     $query
+        //     ->where('name', 'jenis','kategori', "%{$request->search}%");
+        // })->orderBy('created_at', 'desc')->paginate($pagination);
+
+        // $sponsors->appends($request->only('search'));
+
+        $data['sponsors'] = DB::table('sponsors')
+            ->where(DB::raw('lower(name)'), 'like', '%' . strtolower(request()->search) . '%')
+            ->OrWhere(DB::raw('lower(jenis)'), 'like', '%' . strtolower(request()->search) . '%')
+            ->OrWhere(DB::raw('lower(kategori)'), 'like', '%' . strtolower(request()->search) . '%')
+            ->orderBy('id', 'ASC')
+            ->paginate(10);
+        return view('sponsors.index', $data);
+
+        // return view('sponsors.index', [
+        //     'title'    => 'Sponsor',
+        //     'sponsors' => $sponsors,
+        // ])->with('i', ($request->input('page', 1) - 1) * $pagination);
+        // $sponsors = Sponsor::latest()->paginate(5);
     
-        return view('sponsors.index',compact('sponsors'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        // return view('sponsors.index',compact('sponsors'))
+        //     ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
@@ -45,7 +66,7 @@ class SponsorController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
   
-        $input = $request->all();
+        // $input = $request->all();
   
         if ($image = $request->file('image')) {
             $destinationPath = 'sponsor/';
@@ -54,7 +75,11 @@ class SponsorController extends Controller
             $input['image'] = "$profileImage";
         }
     
-        Sponsor::create($input);
+        Sponsor::create([
+            'name' => $request->name,
+            'jenis' => $requestt->jenis,
+            'kategori' => $request->kategori,
+        ]);
      
         return redirect()->route('sponsors.index')
                         ->with('success','Sponsor created successfully.');
@@ -107,7 +132,8 @@ class SponsorController extends Controller
         }else{
             unset($input['sponsor']);
         }
-          
+        
+        // $sponsor = Sponsor::findOrFail($id);
         $sponsor->update($input);
     
         return redirect()->route('sponsors.index')
