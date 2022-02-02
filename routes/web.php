@@ -26,8 +26,10 @@ Route::get('/', [App\Http\Controllers\FhomeController::class, 'index'])->name('h
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home/praeventdanpromosi/{kategori}', [App\Http\Controllers\FhomeController::class, 'praeventdanpromosi']);
 Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout']);
 
+Route::get('/series/list_peserta_negara', [App\Http\Controllers\SeriesController::class, 'listpesertanegara']);
 Route::get('/protokol/video', [App\Http\Controllers\ProtokolController::class, 'video']);
 
 Route::get('/mdcountry', [App\Http\Controllers\MdCountryController::class, 'index']);

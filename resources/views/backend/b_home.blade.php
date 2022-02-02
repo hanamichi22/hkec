@@ -1,4 +1,7 @@
 @extends('backend.layouts.main_layout')
+@section('title_name', 'Home HK Endurance Challenge')
+@section('application_title_name', Auth::user()->name)
+@section('author_name', 'Divisi Sistem, IT & Riset Teknologi')
 @section('page-header')
 <header class="page-header">
     <h2>Home</h2>
@@ -18,7 +21,7 @@
 @endsection
 
 @section('page-content')
-<div class="row">
+{{-- <div class="row">
     <div class="col-lg-6 mb-3">
         <section class="card">
             <div class="card-body">
@@ -779,5 +782,5 @@
             </div>
         </section>
     </div>
-</div>
+</div> --}}
 @endsection

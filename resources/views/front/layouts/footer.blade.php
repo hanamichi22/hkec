@@ -24,15 +24,15 @@
                     <div class="col-md-6">
                         <ul class="list list-icons list-icons-lg">
                             <li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0">Jalan MT Haryono Kav. 8 Cawang, Jakarta Timur</p></li>
-                            <li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i><p class="m-0"><a href="{{ asset('template/') }}/tel:021-8193708">021-8193708</a></p></li>
-                            <li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a href="{{ asset('template/') }}/mailto:corcomm@hutamakarya.com">corcomm@hutamakarya.com</a></p></li>
+                            <li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i><p class="m-0"><a href="tel:021-8193708">021-8193708</a></p></li>
+                            <li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a href="mailto:corcomm@hutamakarya.com">corcomm@hutamakarya.com</a></p></li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <ul class="list list-icons list-icons-sm">
-                            <li><i class="fas fa-angle-right"></i><a href="{{ asset('template/') }}/page-faq.html" class="link-hover-style-1 ms-1"> FAQ's</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="{{ asset('template/') }}/sitemap.html" class="link-hover-style-1 ms-1"> Sitemap</a></li>
-                            <li><i class="fas fa-angle-right"></i><a href="{{ asset('template/') }}/contact-us.html" class="link-hover-style-1 ms-1"> Contact Us</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="#" class="link-hover-style-1 ms-1"> FAQ's</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="#" class="link-hover-style-1 ms-1"> Sitemap</a></li>
+                            <li><i class="fas fa-angle-right"></i><a href="#" class="link-hover-style-1 ms-1"> Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
