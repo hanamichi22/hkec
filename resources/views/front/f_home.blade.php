@@ -356,7 +356,7 @@ Selamat Datang di HK Endurance Challenge</h1>
                     {{-- <h5 class="text-uppercase mt-4">With Captions</h5> --}}
                     <span class="thumb-info thumb-info-hide-wrapper-bg">
                         <span class="thumb-info-wrapper">
-                            <img src="{{ asset("template/img/blog/square/blog-15.jpg") }}" class="img-fluid" alt="">
+                            <img src="{{ asset("praeventdanpromosi/run.JPG") }}" class="img-fluid" alt="">
                             <span class="thumb-info-title">
                                 <span class="thumb-info-inner">Running</span>
                                 <a href="/home/praeventdanpromosi/run" class="thumb-info-type text-white">Learn More..</a>
