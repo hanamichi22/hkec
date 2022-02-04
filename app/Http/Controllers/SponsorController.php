@@ -77,7 +77,7 @@ class SponsorController extends Controller
     
         Sponsor::create([
             'name' => $request->name,
-            'jenis' => $requestt->jenis,
+            'jenis' => $request->jenis,
             'kategori' => $request->kategori,
         ]);
      
