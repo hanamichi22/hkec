@@ -31,7 +31,7 @@
         <form id="form2" class="form-horizontal form-bordered" action="/mdatlet/edit" method="post" enctype="multipart/form-data">
             @csrf
             <input type="hidden" name="id" value="{{ $md_atlet->id }}" />
-            <input type="hidden" name="photo_lama" value="{{ $md_country->photo }}" />
+            <input type="hidden" name="photo_lama" value="{{ $md_atlet->photo }}" />
             <section class="card">
                 <header class="card-header">
                     <div class="card-actions">

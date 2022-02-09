@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\BackendController;
 
 use App\Models\Sponsor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
 class SponsorController extends Controller
 {
@@ -15,14 +16,6 @@ class SponsorController extends Controller
      */
     public function index()
     {
-        $pagination  = 5;
-        // $sponsors    = Sponsor::when($request->search, function ($query) use ($request) {
-        //     $query
-        //     ->where('name', 'jenis','kategori', "%{$request->search}%");
-        // })->orderBy('created_at', 'desc')->paginate($pagination);
-
-        // $sponsors->appends($request->only('search'));
-
         $data['sponsors'] = DB::table('sponsors')
             ->where(DB::raw('lower(name)'), 'like', '%' . strtolower(request()->search) . '%')
             ->OrWhere(DB::raw('lower(jenis)'), 'like', '%' . strtolower(request()->search) . '%')
@@ -30,15 +23,6 @@ class SponsorController extends Controller
             ->orderBy('id', 'ASC')
             ->paginate(10);
         return view('sponsors.index', $data);
-
-        // return view('sponsors.index', [
-        //     'title'    => 'Sponsor',
-        //     'sponsors' => $sponsors,
-        // ])->with('i', ($request->input('page', 1) - 1) * $pagination);
-        // $sponsors = Sponsor::latest()->paginate(5);
-    
-        // return view('sponsors.index',compact('sponsors'))
-        //     ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
@@ -63,22 +47,18 @@ class SponsorController extends Controller
             'name' => 'required',
             'jenis' => 'required',
             'kategori' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
         ]);
-  
-        // $input = $request->all();
-  
-        if ($image = $request->file('image')) {
-            $destinationPath = 'sponsor/';
-            $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
-            $image->move($destinationPath, $profileImage);
-            $input['image'] = "$profileImage";
-        }
+
+        $file = request()->image;
+        $fileName = md5(date('Y-m-d h:i:s')).'.'.$file->extension();
+        $file->move(public_path('sponsor'),$fileName);
     
         Sponsor::create([
             'name' => $request->name,
             'jenis' => $request->jenis,
             'kategori' => $request->kategori,
+            'image' => $fileName,
         ]);
      
         return redirect()->route('sponsors.index')

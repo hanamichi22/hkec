@@ -36,6 +36,19 @@
                             <span>Sponsor</span>
                         </a>                        
                     </li>
+                    <li>
+                        <a class="nav-link" href="/mdseries">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                            <span>Series</span>
+                        </a>                        
+                    </li>
+                    <li class="nav-group-label">Table Data</li>
+                    <li>
+                        <a class="nav-link" href="/bleg">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                            <span>Leg</span>
+                        </a>                        
+                    </li>
                 </ul>
             </nav>
 

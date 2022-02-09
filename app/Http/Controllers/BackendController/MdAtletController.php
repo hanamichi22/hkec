@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\BackendController;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use App\Models\MdAtletModel;
+use App\Http\Controllers\Controller;
 
 class MdAtletController extends Controller
 {
@@ -16,12 +15,8 @@ class MdAtletController extends Controller
     
     public function index()
     {
-        // $param['search'] = "";
-        
         $param['search'] = strtolower(request()->search) ? strtolower(request()->search) : "";
         $param['_token'] = strtolower(request()->_token) ? strtolower(request()->_token) : "";
-        // $param['search'] = strtolower(request()->search);
-        // $param['_token'] = strtolower(request()->_token);
         
         $data['md_atlet'] = $this->MdAtlet->get_all($param);
         return view('backend/b_md_atlet',$data);
