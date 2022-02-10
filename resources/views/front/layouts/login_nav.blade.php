@@ -32,14 +32,26 @@
                                                 Series
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="/series/list_peserta_negara">List Negara Peserta</a></li>
+                                                {{-- <li><a class="dropdown-item" href="/series/list_peserta_negara">The Lombok Series</a></li> --}}
                                                 <li class="dropdown-submenu">
+                                                    <a class="dropdown-item" href="#">The Lombok Series</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Leg</a></li>
+                                                        <ul class="dropdown-submenu">
+                                                            <li><a class="dropdown-item" href="/home/praeventdanpromosi/swim">Renang</a></li>
+                                                            <li><a class="dropdown-item" href="/home/praeventdanpromosi/cycle">Sepeda</a></li>
+                                                            <li><a class="dropdown-item" href="home/praeventdanpromosi/run">Lari</a></li>
+                                                        </ul>
+                                                        <li><a class="dropdown-item" href="/home/praeventdanpromosi/swim">Negara Peserta</a></li>
+                                                        
+                                                    </ul>
+                                                    {{-- <a class="dropdown-item" href="#">The Lombok Series</a>
                                                     <a class="dropdown-item" href="#">Triathlon</a>
                                                     <ul class="dropdown-menu">
                                                         <li><a class="dropdown-item" href="/home/praeventdanpromosi/swim">Renang</a></li>
                                                         <li><a class="dropdown-item" href="/home/praeventdanpromosi/cycle">Sepeda</a></li>
                                                         <li><a class="dropdown-item" href="home/praeventdanpromosi/run">Lari</a></li>
-                                                    </ul>
+                                                    </ul> --}}
                                                 </li>
                                             </ul>
                                         </li>
@@ -60,6 +72,7 @@
                                             <ul class="dropdown-menu">
                                                 <li><a class="dropdown-item" href="#">Sponsorship</a></li>
                                                 <li><a class="dropdown-item" href="#">Pra Event</a></li>
+                                                <li><a class="dropdown-item" href="#">Publikasi</a></li>
                                             </ul>
                                         </li>
                                     </ul>
