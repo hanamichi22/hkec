@@ -8,6 +8,8 @@ install: skip
 script: skip
 services:
   - docker
+  - nginx
+  - postgresql
 jobs:
   include:
     - stage: "Tests"                
@@ -21,7 +23,7 @@ jobs:
       name: "Build and Push Images Docker" 
       script:
       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-      - docker build -t laravel-vue .
+      - docker build -t hkendurance .
       - docker images
-      - docker tag laravel-vue $DOCKER_USERNAME/laravel-vue
-      - docker push $DOCKER_USERNAME/laravel-vue
+      - docker tag v1 $DOCKER_USERNAME/hkendurance
+      - docker push $DOCKER_USERNAME/hkendurance
