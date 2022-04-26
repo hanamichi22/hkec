@@ -1,0 +1,28 @@
+os:
+  - linux
+language: php
+dist: bionic
+php:
+  - '8.0'
+install: skip
+script: skip
+services:
+  - docker
+jobs:
+  include:
+    - stage: "Tests"                
+      name: "Unit Test PHP"  
+      script: 
+      - travis_retry composer self-update
+      - travis_retry composer install --prefer-source --no-interaction
+      - cp .env.example .env
+      - php artisan key:generate
+      - vendor/bin/phpunit tests/Feature/ExampleTest.php
+    - stage: "Build Docker Image"
+      name: "Build and Push Images Docker" 
+      script:
+      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+      - docker build -t hkendurance .
+      - docker images
+      - docker tag v1 $DOCKER_USERNAME/hkendurance
+      - docker push $DOCKER_USERNAME/hkendurance
