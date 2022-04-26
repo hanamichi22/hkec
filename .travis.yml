@@ -3,6 +3,7 @@ os:
 language: php
 dist: bionic
 php:
+  - '7.9'
   - '8.0'
 install: skip
 script: skip
@@ -24,5 +25,5 @@ jobs:
       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
       - docker build -t hkendurance .
       - docker images
-      - docker tag v1 $DOCKER_USERNAME/hkendurance
+      - docker tag hkendurance $DOCKER_USERNAME/hkendurance
       - docker push $DOCKER_USERNAME/hkendurance
