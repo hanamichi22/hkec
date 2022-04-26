@@ -17,3 +17,5 @@ RUN chown -R www-data:www-data /var/www/html
 RUN composer install
 
 RUN yarn install
+
+EXPOSE 9000

@@ -6,6 +6,8 @@ php:
   - '8.0'
 install: skip
 script: skip
+before_script:
+  - phpenv config-rm xdebug.ini
 services:
   - docker
 jobs:
