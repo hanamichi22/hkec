@@ -6,25 +6,25 @@ php:
   - '8.0'
 install: skip
 script: skip
-before_script:
-  - phpenv config-rm xdebug.ini
 services:
   - docker
 jobs:
   include:
     - stage: "Tests"                
       name: "Unit Test PHP"  
+      before_script:
+      - phpenv config-rm xdebug.ini
       script: 
       - travis_retry composer self-update
       - travis_retry composer install --prefer-source --no-interaction
       - cp .env.example .env
       - php artisan key:generate
-      - vendor/bin/phpunit tests/Feature/ExampleTest.php
+      - vendor/bin/phpunit
     - stage: "Build Docker Image"
       name: "Build and Push Images Docker" 
       script:
       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-      - docker build -t hkendurance .
+      - docker build -t laravel-vue .
       - docker images
-      - docker tag hkendurance $DOCKER_USERNAME/hkendurance
-      - docker push $DOCKER_USERNAME/hkendurance
+      - docker tag laravel-vue $DOCKER_USERNAME/laravel-vue
+      - docker push $DOCKER_USERNAME/laravel-vue
