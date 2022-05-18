@@ -3,6 +3,7 @@ os:
 language: php
 dist: bionic
 php:
+  - '7.9'
   - '8.0'
 install: skip
 script: skip
@@ -19,7 +20,7 @@ jobs:
       - travis_retry composer install --prefer-source --no-interaction
       - cp .env.example .env
       - php artisan key:generate
-      - phpunit
+      - vendor/bin/phpunit tests/Feature/ExampleTest.php
     - stage: "Build Docker Image"
       name: "Build and Push Images Docker" 
       script:
