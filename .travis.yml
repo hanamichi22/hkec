@@ -3,7 +3,6 @@ os:
 language: php
 dist: bionic
 php:
-  - '7.9'
   - '8.0'
 install: skip
 script: skip
