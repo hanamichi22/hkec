@@ -19,6 +19,7 @@ jobs:
       - travis_retry composer install --prefer-source --no-interaction
       - cp .env.example .env
       - php artisan key:generate
+      - phpunit
     - stage: "Build Docker Image"
       name: "Build and Push Images Docker" 
       script:
@@ -27,3 +28,5 @@ jobs:
       - docker images
       - docker tag hkendurance $DOCKER_USERNAME/hkendurance
       - docker push $DOCKER_USERNAME/hkendurance
+notifications:
+  email: agarizki46@gmail.com

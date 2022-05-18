@@ -18,4 +18,4 @@ RUN composer install
 
 RUN yarn install
 
-EXPOSE 8080
+EXPOSE 8000
