@@ -10,11 +10,3 @@ RUN chown -R www-data:www-data /var/www/html
 RUN composer install
 RUN yarn install
 EXPOSE 8000
-
-FROM nginx:stable-alpine
-RUN ./:/var/www/html
-RUN ./docker/nginx/site.conf:/etc/nginx/conf.d/default.conf:rw
-RUN ./docker/logs/nginx:/var/logs/nginx:rw
-
-FROM postgres:12.3-alpine
-RUN ./docker/postgres:/var/lib/postgresql/data
