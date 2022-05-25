@@ -13,5 +13,5 @@ RUN yarn install
 FROM nginx:stable-alpine
 RUN apk --no-cache add ca-certificates
 WORKDIR /var/www/html
-COPY --from=builder /var/www/html/hkec ./
+COPY --from=builder /var/www/html/ ./
 CMD ["./hkec"]  
