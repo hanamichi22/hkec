@@ -1,4 +1,4 @@
-FROM php:8.0-fpm-alpine AS builder
+FROM php:8.0-fpm-alpine
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN set -ex \
     	&& apk --no-cache add postgresql-dev nodejs yarn npm\
@@ -9,9 +9,3 @@ COPY --chown=www-data:www-data . /var/www/html/
 RUN chown -R www-data:www-data /var/www/html
 RUN composer install
 RUN yarn install
-
-FROM nginx:stable-alpine
-RUN apk --no-cache add ca-certificates
-WORKDIR /var/www/html
-COPY --from=builder /var/www/html/ ./
-CMD ["./hkec"]  
