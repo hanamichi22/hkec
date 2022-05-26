@@ -20,12 +20,12 @@ RUN yarn install
 
 COPY .env.example .env
 
-#RUN php artisan key:generate
+RUN php artisan key:generate
 
-#RUN php artisan migrate
+RUN php artisan migrate
 
-#RUN php artisan db:seed
+RUN php artisan db:seed
 
-#RUN php artisan storage:link
+RUN php artisan storage:link
 
-#RUN chmod -R 777 storage
+RUN chmod -R 777 storage
