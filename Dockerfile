@@ -10,9 +10,9 @@ WORKDIR /var/www/html
 
 COPY . /var/www/html
 
-#COPY --chown=www-data:www-data . /var/www/html/
+COPY --chown=www-data:www-data . /var/www/html/
 
-#RUN chown -R www-data:www-data /var/www/html
+RUN chown -R www-data:www-data /var/www/html
 
 RUN composer install
 
@@ -21,11 +21,3 @@ RUN yarn install
 COPY .env.example .env
 
 RUN php artisan key:generate
-
-RUN php artisan migrate
-
-RUN php artisan db:seed
-
-RUN php artisan storage:link
-
-RUN chmod -R 777 storage
