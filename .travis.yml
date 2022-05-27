@@ -26,7 +26,7 @@ jobs:
       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
       - docker build -t hk .
       - docker images
-      - docker tag hk $DOCKER_USERNAME/hk
-      - docker push $DOCKER_USERNAME/hk
+      - docker tag hk $DOCKER_USERNAME/hk-php-nginx
+      - docker push $DOCKER_USERNAME/hk-php-nginx
 notifications:
   email: agarizki46@gmail.com
