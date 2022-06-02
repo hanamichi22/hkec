@@ -24,9 +24,9 @@ jobs:
       name: "Build and Push Images Docker" 
       script:
       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-      - docker build -t hk .
+      - docker build -t hkendurance .
       - docker images
-      - docker tag hk $DOCKER_USERNAME/hk-php-nginx
-      - docker push $DOCKER_USERNAME/hk-php-nginx
+      - docker tag hkendurance $DOCKER_USERNAME/hkendurance
+      - docker push $DOCKER_USERNAME/hkendurance
 notifications:
   email: agarizki46@gmail.com
