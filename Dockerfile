@@ -1,4 +1,4 @@
-FROM richarvey/nginx-php-fpm:latest
+FROM jguyomard/laravel-nginx:latest
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
@@ -9,10 +9,6 @@ RUN set -ex \
 WORKDIR /var/www/html/
 
 COPY . /var/www/html/
-
-COPY --chown=www-data:www-data . /var/www/html/
-
-RUN chown -R www-data:www-data /var/www/html/
 
 RUN composer install
 
