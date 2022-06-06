@@ -8,8 +8,7 @@ install: skip
 script: skip
 services:
   - docker
-  - nginx
-  - postgresql
+
 jobs:
   include:
     - stage: "Tests"                
@@ -17,8 +16,6 @@ jobs:
       script: 
       - travis_retry composer self-update
       - travis_retry composer install --prefer-source --no-interaction
-      - cp .env.example .env
-      - php artisan key:generate
       - vendor/bin/phpunit tests/Unit/ExampleTest.php
     - stage: "Build Docker Image"
       name: "Build and Push Images Docker" 
