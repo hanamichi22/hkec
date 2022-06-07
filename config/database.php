@@ -70,7 +70,7 @@ return [
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'hkendurances'),
             'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', ''),
+            'password' => env('DB_PASSWORD', '123'),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
