@@ -28,4 +28,4 @@ FROM nginx:stable-alpine
 
 WORKDIR /var/www/html
 
-COPY --from=builder /var/www/html /var
+COPY --from=builder /var/www/html /html
