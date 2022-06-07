@@ -1,5 +1,5 @@
 # base image app
-FROM php:8.0-fpm-alpine
+FROM php:8.0-fpm-alpine as Builder
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
@@ -9,10 +9,16 @@ RUN set -ex \
 
 WORKDIR /var/www/html
 
-COPY . .
+COPY . /var/www/html
 
 RUN composer install
 
 RUN yarn install
 
 COPY .env.example .env
+
+FROM jguyomard/laravel-nginx:latest
+
+WORKDIR /var/www/html
+
+COPY --from=builder /var/www/html /var/www/html
