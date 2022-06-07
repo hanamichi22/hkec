@@ -1,5 +1,5 @@
 # base image app
-FROM corbosman/laravel-nginx-php:latest
+FROM corbosman/laravel-nginx-php:8
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
