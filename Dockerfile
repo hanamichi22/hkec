@@ -1,5 +1,5 @@
 # base image app
-FROM corbosman/laravel-nginx-php:8
+FROM php:8.0-fpm-alpine AS builder
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
@@ -16,3 +16,11 @@ RUN composer install
 RUN yarn install
 
 COPY .env.example .env
+
+# smaller image
+
+FROM corbosman/laravel-nginx-php:8
+
+WORKDIR /var/www/html
+
+COPY --from=builder /var/www/htnml /var/www/html
