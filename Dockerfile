@@ -23,4 +23,4 @@ FROM corbosman/laravel-nginx-php:8
 
 WORKDIR /var/www/html
 
-COPY --from=builder /var/www/htnml /var/www/html
+COPY --from=builder /var/www/html /var/www/html
