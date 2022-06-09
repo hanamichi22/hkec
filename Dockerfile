@@ -1,4 +1,4 @@
-FROM trafex/php-nginx:latest
+FROM corbosman/laravel-nginx-php:8.0
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
