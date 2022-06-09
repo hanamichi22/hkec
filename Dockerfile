@@ -1,5 +1,5 @@
 # base image app
-FROM php:8.0-fpm-alpine AS builder
+FROM webdevops/php-nginx:latest
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
@@ -18,11 +18,3 @@ RUN yarn install
 COPY .env.example .env
 
 RUN php artisan key:generate
-
-# smaller image
-
-FROM webdevops/php-nginx
-
-WORKDIR /var/www/html
-
-COPY --from=builder /var/www/html /var/www/html
