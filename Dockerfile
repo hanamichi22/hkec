@@ -19,7 +19,7 @@ COPY .env.example .env
 
 # smaller image
 
-FROM corbosman/laravel-nginx-php:8
+FROM tonyyb/laravel-nginx
 
 WORKDIR /var/www/html
 
