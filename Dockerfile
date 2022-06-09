@@ -17,9 +17,11 @@ RUN yarn install
 
 COPY .env.example .env
 
+RUN php artisan key:generate
+
 # smaller image
 
-FROM tonyyb/laravel-nginx
+FROM webdevops/php-nginx
 
 WORKDIR /var/www/html
 
