@@ -1,19 +1,15 @@
-FROM php:8.0-fpm-alpine
+FROM composer AS composer
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+# copying the source directory and install the dependencies with composer
+COPY . /app
 
-RUN set -ex \
-    	&& apk --no-cache add postgresql-dev nodejs yarn npm\
-    	&& docker-php-ext-install pdo pdo_pgsql
+# run composer install to install the dependencies
+RUN composer install \
+  --optimize-autoloader \
+  --no-interaction \
+  --no-progress
 
-WORKDIR /var/www/html
-
-COPY . /var/www/html
-
-RUN composer install
-
-RUN yarn install
-
-COPY .env.example .env
-
-RUN php artisan key:generate
+# continue stage build with the desired image and copy the source including the
+# dependencies downloaded by composer
+FROM trafex/php-nginx
+COPY --chown=nginx --from=composer /app /var/www/html
