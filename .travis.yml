@@ -17,8 +17,6 @@ jobs:
       - travis_retry composer self-update
       - travis_retry composer install --prefer-source --no-interaction
       - vendor/bin/phpunit tests/Unit/ExampleTest.php
-      - cp .env.example .env
-      - php artisan key:generate
     - stage: "Build Docker Image"
       name: "Build and Push Images Docker" 
       script:
