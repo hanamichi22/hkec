@@ -10,7 +10,7 @@ WORKDIR /var/www/html
 
 COPY . /var/www/html
 
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootsrap/cache /var/www/html/public
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/public
 
 RUN composer install
 
