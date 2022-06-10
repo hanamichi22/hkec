@@ -1,4 +1,4 @@
-FROM webhippie/php-nginx
+FROM ruhmesmeile/php-nginx-static
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
