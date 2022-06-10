@@ -1,4 +1,4 @@
-FROM superlogica/php-nginx-alpine:latest
+FROM ronasit/php-nginx
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
