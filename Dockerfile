@@ -16,4 +16,8 @@ RUN composer install
 
 RUN yarn install
 
+COPY .env.example .env
+
+RUN php artisan key:generate
+
 EXPOSE 80
