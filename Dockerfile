@@ -1,4 +1,4 @@
-FROM ronasit/php-nginx:latest
+FROM richarvey/nginx-php-fpm
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
@@ -10,6 +10,10 @@ WORKDIR /var/www/html
 
 COPY . /var/www/html
 
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootsrap/cache /var/www/html/public
+
 RUN composer install
 
 RUN yarn install
+
+EXPOSE 80
