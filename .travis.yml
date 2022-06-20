@@ -26,4 +26,4 @@ jobs:
       - docker tag hkendurance $DOCKER_USERNAME/hkendurance
       - docker push $DOCKER_USERNAME/hkendurance
 notifications:
-  email: agarizki46@gmail.com
+  email: haanaamiichii@gmail.com

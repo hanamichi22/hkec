@@ -45,9 +45,7 @@ COPY --chown=www:www-data . /var/www/html
 # add root to www group
 RUN chmod -R ug+w /var/www/html/storage
 
-# Copy nginx/php/supervisor configs
-RUN cp docker/supervisor.conf /etc/supervisord.conf
-RUN cp docker/php.ini /usr/local/etc/php/conf.d/app.ini
+# Copy nginx configs
 RUN cp docker/nginx.conf /etc/nginx/sites-enabled/default
 
 # PHP Error Log Files
