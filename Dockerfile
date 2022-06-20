@@ -6,8 +6,6 @@ WORKDIR /var/www/html
 # Copy code to /var/www/html
 # COPY --chown=www:www-data . /var/www/html
 
-COPY . /var/www/html
-
 # Add docker php ext repo
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
@@ -34,14 +32,10 @@ RUN apt-get update && apt-get install -y \
     libmemcached-dev \
     nginx
 
-# Install supervisor
-RUN apt-get install -y supervisor
-
-# Install composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
 # Clear cache
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+#RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+COPY . /var/www/html
 
 # Add user for laravel application
 RUN groupadd -g 1000 www
@@ -54,8 +48,8 @@ RUN chmod -R ug+w /var/www/html/storage
 RUN cp docker/nginx/nginx.conf /etc/nginx/sites-enabled/default
 
 # PHP Error Log Files
-RUN mkdir /var/log/php
-RUN touch /var/log/php/errors.log && chmod 777 /var/log/php/errors.log
+#RUN mkdir /var/log/php
+#RUN touch /var/log/php/errors.log && chmod 777 /var/log/php/errors.log
 
 # Deployment steps
 RUN composer install --optimize-autoloader --no-dev
