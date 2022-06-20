@@ -59,4 +59,3 @@ RUN composer install --optimize-autoloader --no-dev
 RUN chmod +x /var/www//html/docker/run.sh
 
 EXPOSE 8000
-ENTRYPOINT ["/var/www/html/docker/run.sh"]
