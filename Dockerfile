@@ -53,8 +53,6 @@ RUN cp docker/nginx/nginx.conf /etc/nginx/sites-enabled/default
 # Deployment steps
 RUN composer install --optimize-autoloader --no-dev
 
-RUN yarn install
-
 COPY .env.example .env
 
 RUN php artisan key:generate
