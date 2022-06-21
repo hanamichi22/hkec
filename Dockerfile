@@ -1,20 +1,5 @@
 FROM php:8.0-fpm
 
-# Set working directory
-WORKDIR /var/www/html
-
-# Copy code to /var/www/html
-# COPY --chown=www:www-data . /var/www/html
-
-# Add docker php ext repo
-ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
-
-# Install php extensions
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
-    install-php-extensions mbstring pdo_pgsql zip exif pcntl gd memcached
-
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -31,28 +16,29 @@ RUN apt-get update && apt-get install -y \
     libmemcached-dev \
     nginx
 
-# Clear cache
-#RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+FROM richarvey/nginx-php-fpm
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+RUN set -ex \
+    	&& apk --no-cache add postgresql-dev nodejs yarn npm\
+    	&& docker-php-ext-install pdo pdo_pgsql
+
+WORKDIR /var/www/html
 
 COPY . /var/www/html
 
-# Add user for laravel application
-RUN groupadd -g 1000 www
-RUN useradd -u 1000 -ms /bin/bash -g www www
-
-# add root to www group
-RUN chmod -R ug+w /var/www/html/storage
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/public
 
 # Copy nginx configs
 RUN cp docker/nginx/nginx.conf /etc/nginx/sites-enabled/default
 
-# PHP Error Log Files
-#RUN mkdir /var/log/php
-#RUN touch /var/log/php/errors.log && chmod 777 /var/log/php/errors.log
+RUN composer install
 
-# Deployment steps
-RUN composer install --optimize-autoloader --no-dev
+RUN yarn install
 
 COPY .env.example .env
 
 RUN php artisan key:generate
+
+EXPOSE 80
