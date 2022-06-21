@@ -31,7 +31,7 @@ COPY . /var/www/html
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/public
 
 # Copy nginx configs
-RUN cp docker/nginx/nginx.conf /etc/nginx/sites-enabled/default
+RUN cp docker/nginx/site.conf /etc/nginx/conf.d/default.conf
 
 RUN composer install
 
