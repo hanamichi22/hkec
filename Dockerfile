@@ -14,6 +14,8 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
 
 # Copy nginx configs
 RUN cp docker/nginx/site.conf /etc/nginx/conf.d/default.conf
+RUN cp docker/logs/nginx /var/logs/nginx
+RUN cp docker/postgres /var/lib/postgresql/data
 
 RUN composer install
 
@@ -23,4 +25,4 @@ COPY .env.example .env
 
 RUN php artisan key:generate
 
-EXPOSE 80
+EXPOSE 8000:80
