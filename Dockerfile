@@ -1,4 +1,4 @@
-FROM richarvey/nginx-php-fpm
+FROM php:8.0-fpm-alpine
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
@@ -10,10 +10,8 @@ WORKDIR /var/www/html
 
 COPY . /var/www/html
 
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/public
-
 # Copy nginx configs
-RUN cp docker/nginx/site.conf /etc/nginx/conf.d/default.conf
+# RUN cp docker/nginx/site.conf /etc/nginx/conf.d/default.conf
 
 RUN composer install
 
@@ -23,4 +21,4 @@ COPY .env.example .env
 
 RUN php artisan key:generate
 
-EXPOSE 8000:80
+EXPOSE 8000
