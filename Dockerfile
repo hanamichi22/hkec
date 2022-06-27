@@ -10,6 +10,8 @@ WORKDIR /var/www/html
 
 COPY . /var/www/html
 
+RUN chown -R root /var/www/html
+
 # Copy nginx configs
 # RUN cp docker/nginx/site.conf /etc/nginx/conf.d/default.conf
 
